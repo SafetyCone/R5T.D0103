@@ -18,6 +18,11 @@ namespace R5T.D0103.I001
             OverridableProcessStartTimeProvider.ProcessStartTimeOverride = DateTimeHelper.FromYYYYMMDD_HHMMSS(yyyymmdd_hhmmss);
         }
 
+        public static void DoNotOverride()
+        {
+            // Does nothing. Just a method to allow the caller to call something on the static class, instead of comment out the call completely.
+        }
+
         #endregion
 
 
