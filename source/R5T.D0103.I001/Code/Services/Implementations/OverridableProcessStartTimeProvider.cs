@@ -1,16 +1,19 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 
 using R5T.Magyar;
 
+using R5T.T0064;
+
 
 namespace R5T.D0103.I001
 {
-    public class OverridableProcessStartTimeProvider : IProcessStartTimeProvider
+    [ServiceImplementationMarker]
+    public class OverridableProcessStartTimeProvider : IProcessStartTimeProvider, IServiceImplementation
     {
         #region Static
 
-        public static Override<DateTime> ProcessStartTimeOverride { get; set; }
+        public static Override<DateTime> ProcessStartTimeOverride { get; set; } = Magyar.Override.NotOverridden<DateTime>();
 
 
         public static void Override(string yyyymmdd_hhmmss)

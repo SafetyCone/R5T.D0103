@@ -13,7 +13,7 @@ namespace R5T.D0103
 
 
         public ConstructorBasedProcessStartTimeProvider(
-            DateTime processStartTime)
+            [NotServiceComponent] DateTime processStartTime)
         {
             this.ProcessStartTime = processStartTime;
         }
