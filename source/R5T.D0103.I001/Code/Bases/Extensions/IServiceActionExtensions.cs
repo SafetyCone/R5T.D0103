@@ -9,7 +9,7 @@ namespace R5T.D0103.I001
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="OverridableProcessStartTimeProvider"/> implementation of <see cref="IProcessStartTimeProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="OverridableProcessStartTimeProvider"/> implementation of <see cref="IProcessStartTimeProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessStartTimeProvider> AddOverridableProcessStartTimeProviderAction(this IServiceAction _,
             IServiceAction<ICurrentProcessStartTimeProvider> currentProcessStartTimeProviderAction)
@@ -21,7 +21,7 @@ namespace R5T.D0103.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="StaticValuedProcessStartTimeProvider"/> implementation of <see cref="IProcessStartTimeProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="StaticValuedProcessStartTimeProvider"/> implementation of <see cref="IProcessStartTimeProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessStartTimeProvider> AddStaticValuedProcessStartTimeProviderAction(this IServiceAction _)
         {
@@ -30,7 +30,7 @@ namespace R5T.D0103.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="ConstructorBasedProcessStartTimeProvider"/> implementation of <see cref="IProcessStartTimeProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ConstructorBasedProcessStartTimeProvider"/> implementation of <see cref="IProcessStartTimeProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessStartTimeProvider> AddConstructorBasedProcessStartTimeProviderAction(this IServiceAction _,
             DateTime processStartTime)
@@ -42,7 +42,7 @@ namespace R5T.D0103.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="CurrentProcessStartTimeProvider"/> implementation of <see cref="ICurrentProcessStartTimeProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="CurrentProcessStartTimeProvider"/> implementation of <see cref="ICurrentProcessStartTimeProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<ICurrentProcessStartTimeProvider> AddCurrentProcessStartTimeProviderAction(this IServiceAction _)
         {
