@@ -2,6 +2,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Magyar\source\R5T.Magyar\R5T.Magyar.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0062\source\R5T.T0062.X001\R5T.T0062.X001.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0064\source\R5T.T0064.T001\R5T.T0064.T001.csproj" />
     <ProjectReference Include="..\R5T.D0103.Base\R5T.D0103.Base.csproj" />
   </ItemGroup>
   <PropertyGroup>
